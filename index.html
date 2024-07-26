@@ -52,7 +52,7 @@
 			color:white;
 		}
 		.mainery{
-			margin-top:35px;
+			margin-top:50px;
 		}
 		.languages{
 			margin-bottom:40px;
@@ -60,8 +60,36 @@
 			grid-template-columns:1fr 1fr 1fr 1fr 1fr;
 		}
 		.langlogo{
+			display:block;
 			height:100%;
 			width:100%;
+		}
+		.imgwrapper{
+			position:relative;
+			overflow:hidden;
+		}
+		.caption{
+			position: absolute;
+			inset: 0;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			font-size:1.5rem;
+			font-weight: bold;
+			color:coral;
+			background-color:white;
+		}
+		.imgwrapper > .langlogo{
+			transition: 0.3s ease-in-out;
+		}
+		.imgwrapper > .caption{
+			transition: 0.3s ease-in-out;
+		}
+		.imgwrapper > .caption.fade{
+			opacity:0;
+		}
+		.imgwrapper:hover > .caption.fade{
+			opacity:1;
 		}
 		</style>
 	</head>
@@ -117,11 +145,26 @@
 							</header>
 							<h1>Profficient in</h1>
 							<div class="languages">
-								<img class="langlogo" src="images/c++.svg">
-								<img class="langlogo" src="images/python.svg">
-								<img class="langlogo" src="images/html.svg">
-								<img class="langlogo" src="images/css.svg">
-								<img class="langlogo" src="images/javascript.svg">
+								<div class="imgwrapper">
+									<img class="langlogo" src="images/c++.svg">
+									<div class="caption fade">C++</div>
+								</div>
+								<div class="imgwrapper">
+									<img class="langlogo" src="images/python.svg">
+									<div class="caption fade">Python</div>
+								</div>
+								<div class="imgwrapper">
+									<img class="langlogo" src="images/html.svg">
+									<div class="caption fade">HTML</div>
+								</div>
+								<div class="imgwrapper">
+									<img class="langlogo" src="images/css.svg">
+									<div class="caption fade">CSS</div>
+								</div>
+								<div class="imgwrapper">
+									<img class="langlogo" src="images/javascript.svg">
+									<div class="caption fade">JavaScript</div>
+								</div>
 							</div>
 							<h1>Browse links to my projects...</h1>
 							<section class="tiles">
@@ -159,7 +202,7 @@
 									<a href="https://www.linkedin.com/in/shah-najib-661b972a2/" target="_blank">
 										<h2>LinkedIn</h2>
 										<div class="content">
-											<p>Connect with me on LinkedIn</p>
+											<p>Connect with me on LinkedIn!</p>
 										</div>
 									</a>
 								</article>
@@ -178,10 +221,10 @@
 									<span class="image">
 										<img src="images/pic06.jpg" alt="" />
 									</span>
-									<a href="generic.html">
-										<h2>?</h2>
+									<a href="https://www.instagram.com/shad00h"target="_blank">
+										<h2>INSTAGRAM</h2>
 										<div class="content">
-											<p>Check it out</p>
+											<p>Follow me on Instagram!</p>
 										</div>
 									</a>
 								</article>
