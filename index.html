@@ -22,27 +22,65 @@
 		a:hover, button:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="checkbox"]:hover, input[type="radio"]:hover, input[type="file"]:hover, input[type="image"]:hover, label:hover, select:hover, textarea:hover, [role="button"]:hover {
       cursor: url('images/cursorhover.png'), auto;
     }
+		@keyframes colorChange {
+						0% { color: teal; }
+            50% { color: coral; }
+						100% { color: teal; }
+		}
+		h1{
+			animation: colorChange 6s infinite;
+		}
+		.profile{
+			display:block;
+			height:150px;
+			margin-top:0px;
+			margin-bottom:20px;
+			border-radius:75px;
+			border:solid;
+			border-width: 3px;
+			animation: colorChange 6s infinite;
+		}
+		.headery{
+			background-image: url("images/newyork.png");
+			height:100%;
+			background-attachment: fixed;
+  		background-position: bottom;
+  		background-repeat: no-repeat;
+  		background-size: cover;
+		}
+		.title{
+			color:white;
+		}
+		.mainery{
+			margin-top:35px;
+		}
 		</style>
 	</head>
+
+
+	
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header">
+					<header class="headery" id="header">
 						<div class="inner">
 
 							<!-- Logo -->
+								
+							<span><img class="profile" src="images/photo.jpeg" alt="" /></span>
 								<a href="index.html" class="logo">
 									<span class="symbol"><img src="images/GlassNew.webp" alt="" /></span><span class="title">Shah Najib</span>
 								</a>
 
-							<!-- Nav -->
+							<!-- Nav
 								<nav>
 									<ul>
 										<li><a href="#menu">menu</a></li>
 									</ul>
 								</nav>
+							-->
 
 						</div>
 					</header>
@@ -60,7 +98,7 @@
 					</nav>
 
 				<!-- Main -->
-					<div id="main">
+					<div class="mainery" id="main">
 						<div class="inner">
 							<header>
 								<h1>Welcome to my personal website.<!--<a href="http://html5up.net">HTML5 UP</a>.--></h1>
@@ -69,7 +107,7 @@
 								<h1>Browse links to my projects...</h1>
 							</header>
 							<section class="tiles">
-								<article class="style3">
+								<article class="style4">
 									<span class="image">
 										<img src="images/pic03.jpg" alt="" />
 									</span>
@@ -80,14 +118,15 @@
 										</div>
 									</a>
 								</article>
-								<article class="style2">
+								<article class="style3">
 									<span class="image">
 										<img src="images/pic02.jpg" alt="" />
 									</span>
-									<a href="generic.html">
-										<h2>Lorem</h2>
+									<a href="https://github.com/shahahs/snakegame"target="_blank">
+										<h2>SNAKE GAME</h2>
+										<h2>(PYTHON)</h2>
 										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+											<p>Click to visit the repository</p>
 										</div>
 									</a>
 								</article>
